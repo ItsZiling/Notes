@@ -59,7 +59,7 @@ Consider the truth table below with some random outputs I have chosen:
 
 <summary> Solution </summary>
 
-> [!TIP]- Solution
+> [!TIP]
 > $(p \wedge \neg q \wedge \neg r) \vee (\neg p \wedge q \wedge \neg r) \vee (\neg p \wedge \neg q \wedge r)$
 > - The only rows you have to consider are the ones with a 1 on the output column; there are three rows on the output column with 1: row 4, 6 and 7. Then take all the variables with their corresponding truth value in that row and combine them with "and" connectivity and separate each row with "or" connectivity.
 >
