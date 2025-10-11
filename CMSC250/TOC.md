@@ -2,10 +2,6 @@
 title: Discrete Structure
 ---
 
-<script
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-  type="text/javascript">
-</script>
 
 This is introductory course that talks about the basics of discrete math.
 It is similar to an introductory math proof course but is specifically tailored towards Computer Science students.
