@@ -51,5 +51,5 @@ It is similar to an introductory math proof course but is specifically tailored 
   - [Proving Function](./content/Proving-Function.md)
 - [Relations](./content/Relations.md)
   - [Relation Concepts](./content/Relation-Concept.md)
-- [Ordinal and Cardinal]
-- [Rules]
+- [Ordinal and Cardinal](./content/Ordinal-Cardinal.md)
+- [Rules](./content/Rules.md)

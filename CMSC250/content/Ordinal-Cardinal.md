@@ -211,16 +211,18 @@ Suppose I have a hotel with infinite number of rooms, numbered starting at 0 the
 	- Now, move along the diagonal of the matrix and assign a room to each guest. So, the guest in row 0 column 0 (bus 0 seat number 0) will move to room 0, the guest in row 0 column 1 (bus 0 seat number 1) will move to room 1, the guest in row 1 column 0 (bus 1 seat number 0) will move to room 2, etc...
 		- Basically a path that goes from row 0 column 0 to row 0 column 1 to row 1 column 0 to row 2 column 0 to row 1 column 1 to row 0  column 2 to etc...
 		- Drawing the matrix and the path looks something like this. If each of those star represents a guest. 
-![[Hotel.png]]
+![Hotel.png](../assests/Hotel.png)
 	- But what if my hotel is full? How would I do fit all the guest into my hotel? 
 		- This would have something to do with infinite prime numbers which is hard to explain so I just linked a video explaining this one. [Infinite Hotel Paradox](https://www.youtube.com/watch?v=Uj3_KqkI9Zo)
 
 > Do notes: this only works with natural numbers or any sets of numbers that has the same cardinality of the set of natural numbers. 
 > - The cardinality of the set of real numbers has a different cardinality to the set of natural numbers, real numbers has an higher order of infinity than naturals which is denoted as $2^{\aleph_0}$
+
+
 ### Cardinality with Different Known Sets
 
 
-What is the cardinality of $\Bbb Z$? 
+What is the cardinality of $\Bbb Z$ (Integers)? 
 - Believe it or not it is $\aleph_0$ which is the same cardinality of $\Bbb N$ 
 	- Therefore, $|\Bbb Z| = |\Bbb N|$ even though $\Bbb N \subset \Bbb Z$ (Natural numbers is a proper subset of Integers). 
 	- All integers can be mapped to to exactly one natural numbers (one to one correspondence). Even though the size of the set of integers should theoretically be bigger, no? 
@@ -230,7 +232,7 @@ What is the cardinality of $\Bbb Z$?
 	- Now, we can see they have the same cardinality.
 
 
-Does $\Bbb R$ has the same cardinality as $\Bbb N$?
+Does $\Bbb R$ (Real Numbers) has the same cardinality as $\Bbb N$ (Natural Numbers)?
 - No, I already answered this. But why?
 	- $\Bbb R$ is not countable 
 		- Take the interval $(0, 1)$ isn't there an infinite amount of numbers between 0 and 1, now if we mapped all the natural numbers to all the real number between 0 and 1, which is not possible you can always find a number between 0 and 1 that does not have a corresponding natural number mapped to it. See [[#Cantor's Diagonalization Proof for Reals]]. 
