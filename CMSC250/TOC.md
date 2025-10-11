@@ -32,12 +32,12 @@ It is similar to an introductory math proof course but is specifically tailored 
 - [Digital Circuit](./content/Digital-Circuit.md)
 - [First-Order Predicate Logic](./content/First-Order-Predicate-Logic.md)
 - [Methods of Proof](./content/Method-of-Proof.md)
-  - [Proof by (Weak) Induction]
-  - [Proof by Strong Induction]
-    - [Constructive Induction]
-  - [Proof by Structural Induction]
-- [Modular Operation, FTOA, and QRT]
-  - [Floor and Ceiling]
+  - [Proof by (Weak) Induction](./content/Proof-by-Weak-Induction.md)
+  - [Proof by Strong Induction](./content/Proof-by-Strong-Induction.md)
+    - [Constructive Induction](./content/Constructive-Induction.md)
+  - [Proof by Structural Induction](./content/Structural-Inducton.md)
+- [Modular Operation, FTOA, and QRT](./content/Modular-Operation-FTOA-and-QRT.md)
+  - [Floor and Ceiling](./content/Floor-Ceiling.md)
 - [Introduction to Set Theory]
   - [Set Properties and Tuples (Or List)]
   - [Proving Set Relationship]

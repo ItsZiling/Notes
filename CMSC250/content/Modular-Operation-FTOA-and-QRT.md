@@ -172,9 +172,10 @@ Example with QRT:
 
 #### 3. Claim: $\sqrt 5$ is irrational
 
-Use FTOA
->[!success]- Proof:
->
+> [!tip]
+> Use FTOA
+> <details>
+> <summary>Proof</summary>
 >Suppose BWOC $\sqrt 5$ is rational (meaning $\sqrt 5 \in \Bbb Q$)
 >1. $\sqrt 5 = \dfrac {a}{b}$ for some $a,b \in \Bbb Z$ where $b \neq 0$
 >2. Without the loss of generality (WLOG) and $\sqrt 5$ cannot be negative so we can assume $a > 0$ and $b > 0$
@@ -193,3 +194,4 @@ Use FTOA
 >   2. The number of 5's on the RHS is $2e_3$
 >
 >The FTOA states that prime factors has to be unique so the LHS must equal to the RHS but this impossible since LHS has a odd number of 5's while the RHS has a even number of 5's therefore $\sqrt 5$ must be irrational. $\blacksquare$
+> </details>
