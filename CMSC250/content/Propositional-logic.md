@@ -7,31 +7,37 @@
 
 
 
->[!TIP] Example of Statement
->- 6 < 4
+> [!TIP] 
+> Example of Statement
+> - 6 < 4
 >	- This would be `false`. 6 is not less than 4
->- There exists some integer x such that x > 2
+> - There exists some integer x such that x > 2
 >	- This would be `true`. There does exist some integer (labeled x) that is greater than 2
->> A statement can also involve the future tense so if a statement is: 
->> - Tommy will get an A in his next exam. 
->> 	- This is a statement, we just don't know if it's `true` or `false` yet. 
+> 
+> Statements can also involve the future tense so if a statement is: 
+> - Tommy will get an A in his next exam. 
+>   - This is a statement, we just don't know if it's `true` or `false` yet. 
 
->[!note]
->If the sentence contains any "ambiguous" words such as "she, he, they or them", they are not statement. The words must be specific. 
->>[!example]
->> - She lives at 1234 Main Street 
->> > This is not a statement. The word "she" is effectively treated like a free variable or unbound variable ***X***. This means that "she" is too vague and can be applied to any female. You would need to specify who "she" is for it to be considered a statement.
->
+
+
+> [!NOTE]
+> If the sentence contains any "ambiguous" words such as "she, he, they or them", they are not statement. The words must be specific. 
+> - She lives at 1234 Main Street 
+>   - This is not a statement. The word "she" is effectively treated like a free variable or unbound variable ***X***. This means that "she" is too vague and can be applied to any female. You would need to specify who "she" is for it to be considered a statement.
+
 > Also Note: 
->- Opinions are not statements
->> Chocolate ice cream is the best flavored ice cream
->> >This is objectively false by the way. Still an opinion.
->- Questions are not statements
->>What is the weather today? 
->>>Try assigning a `true` or  `false` value to this one. You'll find its not possible.
->- Commands are not statements
->> Hey go close that door now!
->> >Once again, Try assigning a `true` or `false` value to this one. 
+> 
+> - Opinions are not statements
+>   - Chocolate ice cream is the best flavored ice cream
+>> This is objectively false by the way. Still an opinion.
+> 
+> - Questions are not statements 
+>   - What is the weather today? 
+>> Try assigning a `true` or  `false` value to this one. You'll find its not possible.
+> 
+> - Commands are not statements
+>   - Hey go close that door now!
+>> Once again, Try assigning a `true` or `false` value to this one. 
 
 
 ## Logical Connectivity 
@@ -39,66 +45,75 @@
 
 | Connectivity    | Meaning           |
 | --------------- | ----------------- |
-| $$\wedge$$      | and (conjunction) |
-| $$\vee$$        | or (disjunction)  |
-| $$\sim (\neg)$$ | not (negation)    |
-- ### Some Simple Usage of Connectivity
-	- Suppose $$p$$= `Jason has an A in CMSC250` and $$q$$= `Jason is in denial`
-		- A simple form of connectivity can be $$p \wedge q$$
-			- This would mean `Jason has an A in CMSC250 and is in denial`
+| $\wedge$      | and (conjunction) |
+| $\vee$        | or (disjunction)  |
+| $\sim (\neg)$ | not (negation)    |
+### Some Simple Usage of Connectivity
+Suppose $p$= `Jason has an A in CMSC250` and $q$= `Jason is in denial`
+  - A simple form of connectivity can be $p \wedge q$
+    - This would mean `Jason has an A in CMSC250 and is in denial`
 
->[!info]- Order of Precedence 
-> - $$\sim (\neg)$$ takes precedence over $$\wedge$$ and $$\vee$$
-> - $$\wedge$$ and $$\vee$$ have the same precedence.
->>[!important] Important
->>- When dealing with $$\wedge$$ and $$\vee$$ parenthesis are needed to specify what comes first or else it is not considered a statement, unless it contains all the same connectivity
->>>[!example] Example
->>>- Suppose we used the same example ***p*** and ***q*** above and introduce a new variable ***r***, suppose ***r*** = `I am angry.` 
->>>		- $$p \wedge q \vee r$$, is not a valid statement (Parenthesis is needed!!!). 
->>>		- $$(p \wedge q) \vee r$$, is a valid statement. 
->>>		- $$p \wedge q \wedge r$$, is also a valid statement since all the connectivity are the same.
+
+
+> [!NOTE]
+> Order of Precedence 
+> - $\sim (\neg)$ takes precedence over $\wedge$ and $\vee$
+> - $\wedge$ and $\vee$ have the same precedence.
+
+
+> [!TIP] 
+> Important
+> - When dealing with $\wedge$ and $\vee$ parenthesis are needed to specify what comes first or else it is not considered a statement, unless it contains all the same connectivity. 
+> 
+> Example: 
+> - Suppose we used the same example ***p*** and ***q*** above and introduce a new variable ***r***, suppose ***r*** = `I am angry.` 
+>   - $p \wedge q \vee r$, is not a valid statement (Parenthesis is needed!!!). 
+>	- $(p \wedge q) \vee r$, is a valid statement. 
+>	- $p \wedge q \wedge r$, is also a valid statement since all the connectivity are the same.
+
 ## Translating English into Logic 
 When we are given an English statement, we break the statement into parts and assign a variable to each part then connect the parts together with a logic connectivity.
-- We will translate the given statements into "logic": 
-	- "Tommy likes oranges and apples"
-		- Let p = `Tommy likes oranges` and q = `Tommy likes apples`
-			- $$p \wedge q$$
-	- "Fruits are healthy but snacks are not"
-		- Let p = `fruits are healthy` and q = `snacks are healthy` 
-			- $$p \wedge \sim q$$
-	- Either Jim is sleepy or Jim is tired
-		- Let p = `Jim is sleepy` and q = `Jim is tired`
-			- $$p \vee q$$
-	- Neither Jim nor Timmy are sleeping 
-		- Let p = `Jim is sleeping` and q = `Timmy is sleeping`
-		- Note: Either of the two notations work here, they are equivalent. See [[Law-of-Equivalance.png|Laws of Equivalence]] 
-			- $$ \sim p \wedge \sim q$$ or
-			- $$\sim (p \vee q)$$
-	- Neither Jim nor Timmy are angry but Tommy is. 
-		- Let p = `Jim is angry` and q = `Timmy is angry` and r = `Tommy is angry`
-			- $$\sim p \wedge \sim q \wedge r$$
+
+We will translate the given statements into "logic": 
+- "Tommy likes oranges and apples"
+  - Let p = `Tommy likes oranges` and q = `Tommy likes apples`
+    	- $p \wedge q$
+- "Fruits are healthy but snacks are not"
+  - Let p = `fruits are healthy` and q = `snacks are healthy` 
+	- $p \wedge \sim q$
+- Either Jim is sleepy or Jim is tired
+  - Let p = `Jim is sleepy` and q = `Jim is tired`
+	- $p \vee q$
+- Neither Jim nor Timmy are sleeping 
+  - Let p = `Jim is sleeping` and q = `Timmy is sleeping`
+    - Note: Either of the two notations work here, they are equivalent. See [Law of Equivalance](../assests/Law%20of%20Equivalance.png)
+	- $\sim p \wedge \sim q$ or
+	- $\sim (p \vee q)$
+- Neither Jim nor Timmy are angry but Tommy is. 
+  - Let p = `Jim is angry` and q = `Timmy is angry` and r = `Tommy is angry`
+	- $\sim p \wedge \sim q \wedge r$
 ## Truth Table 
-- Determines whether or not a statement is `true` or `false` under every possible interpretation. 
-	- We would use `T` for `true` and `F` for `false`.
-	- If we use binary, `1` would be `true` and `0` would be `false`.
+Determines whether or not a statement is `true` or `false` under every possible interpretation. 
+- We would use `T` for `true` and `F` for `false`.
+- If we use binary, `1` would be `true` and `0` would be `false`.
 	
-- ### Interpretation
-	- Each row of a truth table represents an interpretation.
-	- An Interpretation is basically a combination of assignments of either `true` or `false` value for each variable.
-		- For example, suppose we have variable ***p*** and ***q***.
-			- One interpretation can be ***p*** is `true` and ***q*** is `false`.
-		- Given an Interpretation we can evaluate whether or not a statement is true under that specific interpretation, this is known as **"truth valuation"**.
-			- Suppose ***p*** and ***q*** is connected by `and`, so $$p \wedge q$$
-			- Under the interpretation above this statement would be `false` since ***p*** is `true` and ***q*** is `false`. 
-			- 
->[!tip]-
->- The only time that a statement connected by only $$\wedge$$ is true is if all the variables are true
->- The only time that a statement connected by only $$\vee$$ is false is if all the variables are false
+### Interpretation
+Each row of a truth table represents an interpretation.
+An Interpretation is basically a combination of assignments of either `true` or `false` value for each variable.
+- For example, suppose we have variable ***p*** and ***q***.
+  - One interpretation can be ***p*** is `true` and ***q*** is `false`.
+  - Given an Interpretation we can evaluate whether or not a statement is true under that specific interpretation, this is known as **"truth valuation"**.
+  - Suppose ***p*** and ***q*** is connected by `and`, so $p \wedge q$
+    - Under the interpretation above this statement would be `false` since ***p*** is `true` and ***q*** is `false`. 
+   
+> [!tip]
+> - The only time that a statement connected by only $\wedge$ is true is if all the variables are true
+> - The only time that a statement connected by only $\vee$ is false is if all the variables are false
 
 ### Truth Table Example
 - I will be using `1` for `true` and `0` for `false`
 
-| $$p$$ | $$q$$ | $$\sim p$$ | $$p \wedge q$$ | $$p \vee q$$ | $$\sim p \vee q$$ | $$\sim(p \wedge q)$$ |
+| $p$ | $q$ | $\sim p$ | $p \wedge q$ | $p \vee q$ | $\sim p \vee q$ | $\sim(p \wedge q)$ |
 | :---: | :---: | :--------: | :------------: | :----------: | :---------------: | :------------------: |
 |   1   |   1   |     0      |       1        |      1       |         1         |          0           |
 |   1   |   0   |     0      |       0        |      1       |         0         |          1           |
@@ -107,37 +122,42 @@ When we are given an English statement, we break the statement into parts and as
 
 ## Logical Equivalence
 Two statements are considered logically equivalent if they have the same truth value under every possible interpretation. 
-- $$q \equiv \sim \sim q$$
->[!info]
->The symbol $$ \equiv $$ means "equivalent" or "congruent". Do note that  there is another symbol that specifically means "congruent" which is $$ \cong $$ but for sake of this course the symbol $$ \equiv $$ means both equivalent and congruent. Also note, that neither symbol means "equal to". "Equivalent" and "congruent" is the NOT same as "equal to". 
+- $q \equiv \sim \sim q$
+
+>[!NOTE]
+>The symbol $\equiv$ means "equivalent" or "congruent". Do note that  there is another symbol that specifically means "congruent" which is $\cong$ but for sake of this course the symbol $\equiv$ means both equivalent and congruent. Also note, that neither symbol means "equal to". "Equivalent" and "congruent" is the NOT same as "equal to". 
 
 To check whether or not two statements are equivalent you can always write out a truth table. 
 - But as you progress in this course you will starts to notice that it is very tedious to write out a truth table every time. 
-	- If you are given that the two statements are not logically equivalent and you are required to show that they are not equivalent then you just have to find one interpretation where they don't match.
+  - If you are given that the two statements are not logically equivalent and you are required to show that they are not equivalent then you just have to find one interpretation where they don't match.
 ### Tautology
 A statement is called a tautology if they are `true` under every possible interpretation. 
 - Example
-	- $q$ $\vee$ $\sim q$
+  - $q$ $\vee \sim q$
 
 ### Contradiction 
 A statement is called a contradiction if they are `false` under every possible interpretation.
 - Example
-	- $q$ $\wedge$ $\sim q$
+  - $q$ $\wedge \sim q$
 
 
 ## Laws of Equivalence
 We can use the laws of equivalence to simplify statements
-![[Law of Equivalance.png]]
-> [!example]-
+![Law of Equivalance.png](../assests/Law%20of%20Equivalance.png)
+
+> [!IMPORTANT]
 > Given the statement: $$\sim (\sim p \wedge q) \wedge (p \vee \sim q)$$
 > We can simplify this statement to a more readable one using the following steps:
 > - Simplification Steps: 
 > 	- Apply DeMorgan Law 
-> 		- $$(\sim \sim p \vee \sim q) \wedge (p \vee \sim q)$$
+> 		- $(\sim \sim p \vee \sim q) \wedge (p \vee \sim q)$
 > 	- Apply Double Negative Law
-> 		- $$(p \vee \sim q) \wedge (p \vee \sim q)$$ 
+> 		- $(p \vee \sim q) \wedge (p \vee \sim q)$ 
 > 	- Apply Idempotent Law 
-> 		- $$ (p \vee \sim q)$$ 
+> 		- $(p \vee \sim q)$
+> > [!TIP]
+> >
+> > asjdkdj
 
 We can also use Laws of Equivalence to show if two statement are equivalent to each other
 
