@@ -25,19 +25,21 @@
 > - She lives at 1234 Main Street 
 >   - This is not a statement. The word "she" is effectively treated like a free variable or unbound variable ***X***. This means that "she" is too vague and can be applied to any female. You would need to specify who "she" is for it to be considered a statement.
 
+> [!caution]
 > Also Note: 
 > 
-> - Opinions are not statements
->   - Chocolate ice cream is the best flavored ice cream
->> This is objectively false by the way. Still an opinion.
+> Opinions are not statements
+> - Chocolate ice cream is the best flavored ice cream
+>   - This is objectively false by the way. Still an opinion.
 > 
-> - Questions are not statements 
->   - What is the weather today? 
->> Try assigning a `true` or  `false` value to this one. You'll find its not possible.
+> Questions are not statements 
+> - What is the weather today? 
+>   - Try assigning a `true` or  `false` value to this one. You'll find its not possible.
 > 
-> - Commands are not statements
->   - Hey go close that door now!
->> Once again, Try assigning a `true` or `false` value to this one. 
+> Commands are not statements
+> - Hey go close that door now!
+>   - Once again, Try assigning a `true` or `false` value to this one.
+
 
 
 ## Logical Connectivity 

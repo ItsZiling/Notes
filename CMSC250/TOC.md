@@ -26,12 +26,12 @@ It is similar to an introductory math proof course but is specifically tailored 
 > - Rational Numbers $\mathbb {Q}$
 
 
-## Course Content: Notes
+## Course Content Notes:
 
 - [Propositional Logic](./content/Propositional-logic.md)
 - [Digital Circuit](./content/Digital-Circuit.md)
-- [First-Order Predicate Logic]
-- [Methods of Proof]
+- [First-Order Predicate Logic](./content/First-Order-Predicate-Logic.md)
+- [Methods of Proof](./content/Method-of-Proof.md)
   - [Proof by (Weak) Induction]
   - [Proof by Strong Induction]
     - [Constructive Induction]
