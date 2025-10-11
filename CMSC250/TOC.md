@@ -49,7 +49,7 @@ It is similar to an introductory math proof course but is specifically tailored 
   - [Composition Function](./content/Composition-Functions.md)
   - [Pigeonhole Principle](./content/Pigeonhole.md)
   - [Proving Function](./content/Proving-Function.md)
-- [Relations]
-  - [Relation Concepts]
+- [Relations](./content/Relations.md)
+  - [Relation Concepts](./content/Relation-Concept.md)
 - [Ordinal and Cardinal]
 - [Rules]
