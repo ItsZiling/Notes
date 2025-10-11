@@ -38,17 +38,17 @@ It is similar to an introductory math proof course but is specifically tailored 
   - [Proof by Structural Induction](./content/Structural-Inducton.md)
 - [Modular Operation, FTOA, and QRT](./content/Modular-Operation-FTOA-and-QRT.md)
   - [Floor and Ceiling](./content/Floor-Ceiling.md)
-- [Introduction to Set Theory]
-  - [Set Properties and Tuples (Or List)]
-  - [Proving Set Relationship]
-- [Combinatorics and Probability]
-  - [Probability Concepts]
-  - [Combinatorics (Counting) Concepts]
-  - [Examples with Combinatorics and Probability|Examples from Lectures]
-- [Functions]
-  - [Composition Function]
-  - [Pigeonhole Principle]
-  - [Proving Function|Proving Function]
+- [Introduction to Set Theory](./content/Introduction-to-Set-Theory.md)
+  - [Set Properties and Tuples (Or List)](./content/Set-Properties-and-Tuples.md)
+  - [Proving Set Relationship](./content/Proving-Set-Relationship.md)
+- [Combinatorics and Probability](./content/Combinatorics-and-Probability.md)
+  - [Probability Concepts](./content/Probability-Concepts.md)
+  - [Combinatorics (Counting) Concepts](./content/Combinatorics-Concepts.md)
+  - [Examples from Lecture](./content/Examples-with-Combinatorics-and-Probability.md)
+- [Functions](./content/Functions.md)
+  - [Composition Function](./content/Composition-Functions.md)
+  - [Pigeonhole Principle](./content/Pigeonhole.md)
+  - [Proving Function](./content/Proving-Function.md)
 - [Relations]
   - [Relation Concepts]
 - [Ordinal and Cardinal]

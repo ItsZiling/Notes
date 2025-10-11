@@ -1,5 +1,5 @@
 
-
+# Proof by (Weak) Induction
 
 > [!note]
 > Read [Modular Operation, FTOA, and QRT](./Modular-Operation-FTOA-and-QRT.md) first. 

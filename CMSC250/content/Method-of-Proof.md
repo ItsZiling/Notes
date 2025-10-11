@@ -1,6 +1,6 @@
+# Methods of Proof
 
-
-# Definition of Common Domain
+# Definition of Common Domains
 
 - $\Bbb {R}$ - All real numbers
 - $\Bbb {Z}$ - All integers

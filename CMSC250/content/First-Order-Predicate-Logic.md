@@ -1,4 +1,4 @@
-
+# First Order Predicate Logic
 A predicate is an expression that is either `true` or `false`. The truth of a predicate depends on the value of a variable contained within the predicate. When defining a predicate, the domain must also be specified. 
 - A predicate is not a statement. However, we can transform a predicate into a quantified statement. More on that later, but take the following example of a predicate: 
 	- $P(x)$ = "x is odd", where x is an integer ($\Bbb{Z}$)

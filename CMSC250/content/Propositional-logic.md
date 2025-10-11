@@ -1,3 +1,4 @@
+# Propositional Logic
 
 ## Statement
 - A sentence that can be assigned a truth value of either `true` or `false`.

@@ -1,4 +1,5 @@
 
+# Digital Circuit
 This is not a super important unit for discrete structures as it deals with hardware, however it is good to know. 
 
 ## Basic Logic Gates

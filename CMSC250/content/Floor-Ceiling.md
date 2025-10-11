@@ -1,5 +1,4 @@
-
-
+# Floor and Ceiling
 
 > [!important] 
 > ## Floor Definition:
