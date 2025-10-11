@@ -20,14 +20,16 @@ It is similar to an introductory math proof course but is specifically tailored 
 > Examples of Discrete Structures: 
 >
 > - Integers $\mathbb {Z}$
-> - Natural Number $\mathbb {N}$ Note for this course 0 will be counted as part of the natural number.
+> - Natural Numbers $\mathbb {N}$ Note for this course 0 will be counted as part of the natural number.
+
+> [!TIP] 
+>
+> Examples of Continuous Structures: 
+>
+> - Real Numbers $\mathbb {R}$
+> - Rational Numbers $\mathbb {Q}$
 
 
->[!example|purple.red]- Examples of Continuous Structure
->
->- Real Numbers$(\Bbb{R})$
->- Rational Numbers$(\Bbb{Q})$
->
 ## Course Content: Notes
 
 - [[1. Propositional Logic]]
