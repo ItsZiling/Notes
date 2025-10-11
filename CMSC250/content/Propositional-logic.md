@@ -43,8 +43,8 @@
 ## Logical Connectivity 
 - They are used to connect statements together to form, according to my professor, more complex statements.
 
-| Connectivity    | Meaning           |
-| --------------- | ----------------- |
+| Connectivity  | Meaning           |
+| ------------- | ----------------- |
 | $\wedge$      | and (conjunction) |
 | $\vee$        | or (disjunction)  |
 | $\sim (\neg)$ | not (negation)    |
@@ -113,12 +113,12 @@ An Interpretation is basically a combination of assignments of either `true` or 
 ### Truth Table Example
 - I will be using `1` for `true` and `0` for `false`
 
-| $p$ | $q$ | $\sim p$ | $p \wedge q$ | $p \vee q$ | $\sim p \vee q$ | $\sim(p \wedge q)$ |
-| :---: | :---: | :--------: | :------------: | :----------: | :---------------: | :------------------: |
-|   1   |   1   |     0      |       1        |      1       |         1         |          0           |
-|   1   |   0   |     0      |       0        |      1       |         0         |          1           |
-|   0   |   1   |     1      |       0        |      1       |         1         |          1           |
-|   0   |   0   |     1      |       0        |      0       |         1         |          1           |
+|  $p$  |  $q$  | $\sim p$ | $p \wedge q$ | $p \vee q$ | $\sim p \vee q$ | $\sim(p \wedge q)$ |
+| :---: | :---: | :------: | :----------: | :--------: | :-------------: | :----------------: |
+|   1   |   1   |    0     |      1       |     1      |        1        |         0          |
+|   1   |   0   |    0     |      0       |     1      |        0        |         1          |
+|   0   |   1   |    1     |      0       |     1      |        1        |         1          |
+|   0   |   0   |    1     |      0       |     0      |        1        |         1          |
 
 ## Logical Equivalence
 Two statements are considered logically equivalent if they have the same truth value under every possible interpretation. 
@@ -146,80 +146,89 @@ We can use the laws of equivalence to simplify statements
 ![Law of Equivalance.png](../assests/Law%20of%20Equivalance.png)
 
 > [!IMPORTANT]
-> Given the statement: $$\sim (\sim p \wedge q) \wedge (p \vee \sim q)$$
+> Given the statement: $\sim (\sim p \wedge q) \wedge (p \vee \sim q)$.
+> 
 > We can simplify this statement to a more readable one using the following steps:
-> - Simplification Steps: 
-> 	- Apply DeMorgan Law 
-> 		- $(\sim \sim p \vee \sim q) \wedge (p \vee \sim q)$
-> 	- Apply Double Negative Law
-> 		- $(p \vee \sim q) \wedge (p \vee \sim q)$ 
-> 	- Apply Idempotent Law 
-> 		- $(p \vee \sim q)$
-> > [!TIP]
-> >
-> > asjdkdj
+> 
+> Simplification Steps: 
+> - Apply DeMorgan Law 
+> 	- $(\sim \sim p \vee \sim q) \wedge (p \vee \sim q)$
+> - Apply Double Negative Law
+> 	- $(p \vee \sim q) \wedge (p \vee \sim q)$ 
+> - Apply Idempotent Law
+> 	- $(p \vee \sim q)$
 
 We can also use Laws of Equivalence to show if two statement are equivalent to each other
 
->[!example]-
->Given the statement: $$\sim(p \vee \sim q) \vee (\sim q \wedge \sim p)$$ show that it is equivalent to $$\sim p$$
->- Steps(I will be combining some steps together because it is tedious to type everything out): 
->	- Apply DeMorgan Law
->		- $$(\sim p \wedge \sim \sim q) \vee (\sim q \wedge \sim p)$$
->	- Apply Commutative Law and Double Negative Law
->		- $$(\sim p \wedge q) \vee (\sim p \wedge \sim q)$$ 
->	- Apply Distributive Law
->		- $$\sim p \wedge (q \vee \sim q)$$
->	- Apply Negation Law
->		- $$\sim p \wedge Tautology$$
->	- Apply Identity Law 
->		- $$\sim p$$
+> [!important]
+> Given the statement: $\sim(p \vee \sim q) \vee (\sim q \wedge \sim p)$ show that it is equivalent to $\sim p$
+> 
+> Steps(I will be combining some steps together because it is tedious to type everything out): 
+> - Apply DeMorgan Law
+> 	- $(\sim p \wedge \sim \sim q) \vee (\sim q \wedge \sim p)$
+> - Apply Commutative Law and Double Negative Law
+> 	- $(\sim p \wedge q) \vee (\sim p \wedge \sim q)$
+> - Apply Distributive Law
+> 	- $\sim p \wedge (q \vee \sim q)$
+> - Apply Negation Law
+> 	- $\sim p \wedge Tautology$
+> - Apply Identity Law 
+> 	- $\sim p$
 
 
 
 ## Implications (Conditional Statement)
 Implication is defined with an arrow $$\to$$.
  In plain English that means "implies". In programming, its akin to an "if then" statement.
- - So if we have the statement $$ p \to q$$
-	 - In English that means "p implies q" or "if p then q" 
-	 - Using the definition of arrow $(\rightarrow)$ above in the laws of equivalence chart it is equivalent to $$ \sim p \vee q$$
 
->[!note]
->The arrow $\to$ has a lower precedence than $\vee$ and $\wedge$
->> So if we have the statement $$ p \wedge q \to r$$
->> - You would do the "and" first then the "arrow" so you can look at it as: $$ (p \wedge q) \to r$$
+ So if we have the statement $p \to q$
+- In English that means "p implies q" or "if p then q" 
+- Using the definition of arrow $(\rightarrow)$ above in the laws of equivalence chart it is equivalent to 
+
+$$\sim p \vee q$$
+
+> [!note]
+> The arrow $\to$ has a lower precedence than $\vee$ and $\wedge$
+> 
+> So if we have the statement $p \wedge q \to r$
+> - You would do the "and" first then the "arrow" so you can look at it as: 
+> $$(p \wedge q) \to r$$
 
 When drawing a truth table for implication, the only interpretation that makes the arrow `false` is if the left hand side of the arrow is `true` but the right hand side is `false`. However, if the left hand side of the arrow is `false` then we do not care if the right hand side is `true` or `false`.The statement is automatically `true`.
 - For further justification, the arrow represents implication. Imagine the statement "p implies q". If p is `true` then it must mean that q is `true` for the statement to be `true`, however, if p is `true` and q is `false`, then that statement is `false`. Respectively, if p is `false` then we do not care if q is `true` or `false` the statement is `true` either way.
-	- Consider the statement, "If the floor is wet then the floor is slippery".
-		- The only time the statement is `false` is if the floor is wet but the floor is not slippery.
-		- If the floor is not wet then we do not care if it is slippery. The statement is `true` because if the floor is not wet then it may or may not imply that it is slippery. 
+  - Consider the statement, "If the floor is wet then the floor is slippery".
+    - The only time the statement is `false` is if the floor is wet but the floor is not slippery.
+    - If the floor is not wet then we do not care if it is slippery. The statement is `true` because if the floor is not wet then it may or may not imply that it is slippery. 
+
 > When translating implication into logic, they follow the same steps of breaking the statement apart and assign a variable to each parts.
+> 
 >  Example: "If the floor is wet then the floor is slippery"
 > - Let p = `floor is wet` and q = `floor is slippery`
 > 	- $p \rightarrow q$
 
 ### Example of Implication using Truth Table
 
-| $$p$$ | $$q$$ | $$\sim p$$ | $$p \to q$$ | $$\sim p \vee q$$ |
-| :---: | :---: | :--------: | :---------: | :---------------: |
-|   1   |   1   |     0      |      1      |         1         |
-|   1   |   0   |     0      |      0      |         0         |
-|   0   |   1   |     1      |      1      |         1         |
-|   0   |   0   |     1      |      1      |         1         |
-> Observe that $$p \to q$$ and $$\sim p \vee q$$ are equivalent thus we have prove the Definition of $\rightarrow$ from the Laws of Equivalence chart.
+|  $p$  |  $q$  | $\sim p$ | $p \to q$ | $\sim p \vee q$ |
+| :---: | :---: | :------: | :-------: | :-------------: |
+|   1   |   1   |    0     |     1     |        1        |
+|   1   |   0   |    0     |     0     |        0        |
+|   0   |   1   |    1     |     1     |        1        |
+|   0   |   0   |    1     |     1     |        1        |
+
+> Observe that $p \to q$ and $\sim p \vee q$ are equivalent thus we have prove the Definition of $\rightarrow$ from the Laws of Equivalence chart.
 
 ### Converse, Inverse and Contrapositive Definition for Implication
-Suppose we have p and q where p = `floor is wet` and q = `floor is slippery` and $$p \to q$$ so "if the floor is wet then the floor is slippery"
-- The converse will be: $$q \to p$$
-	- This means "if the floor is slippery then the floor is wet"
-- The inverse will be: $$\sim p \to \sim q$$
-	- This means "if the floor is not wet then the floor is not slippery"
-- The contrapositive will be: $$\sim q \to \sim p$$
-	- This means "if the floor is not slippery then the floor is not wet"
+Suppose we have p and q where p = `floor is wet` and q = `floor is slippery` and $p \to q$ so "if the floor is wet then the floor is slippery"
+- The converse will be: $q \to p$
+  - This means "if the floor is slippery then the floor is wet"
+- The inverse will be: $\sim p \to \sim q$
+  - This means "if the floor is not wet then the floor is not slippery"
+- The contrapositive will be: $\sim q \to \sim p$
+  - This means "if the floor is not slippery then the floor is not wet"
+
 Converse means you flip them, inverse means you negate both, contrapositive means you negate both then flip them. Pretty self-explanatory.
 
->[!tip]
+> [!tip]
 > - The original statement is equivalent to its contrapositive
 > - The converse is equivalent to the inverse
 > 
@@ -230,79 +239,81 @@ Converse means you flip them, inverse means you negate both, contrapositive mean
 ## Biconditional Statement (if and only if)
 Biconditional statement is defined with a double arrow: $\leftrightarrow$
 - This is the same thing as saying the LHS (left hand side) implies the RHS (right hand side) and the RHS implies the LHS. 
-	- In simple terms you can say RHS if and only if LHS
-		- Suppose we have the statement: $$p \leftrightarrow q$$
-			- This is equivalent to $$ (p \to q) \wedge (q \to p)$$
-			- This is effectively saying that both p and q have to be `true` or they both have to be `false`. So this is also equivalent to $$(p \wedge q) \vee (\sim p \wedge \sim q)$$
+  - In simple terms you can say RHS if and only if LHS
+    - Suppose we have the statement: $p \leftrightarrow q$
+    - This is equivalent to $ (p \to q) \wedge (q \to p)$
+    - This is effectively saying that both p and q have to be `true` or they both have to be `false`. So this is also equivalent to $(p \wedge q) \vee (\sim p \wedge \sim q)$
+
 Using a truth table we have
 
-| $$p$$ | $$q$$ | $$p \leftrightarrow q$$ |
-| ----- | ----- | ----------------------- |
-| 1     | 1     | 1                       |
-| 1     | 0     | 0                       |
-| 0     | 1     | 0                       |
-| 0     | 0     | 1                       |
+|  $p$  |  $q$  | $p \leftrightarrow q$ |
+| :---: | :---: | :-------------------: |
+|   1   |   1   |           1           |
+|   1   |   0   |           0           |
+|   0   |   1   |           0           |
+|   0   |   0   |           1           |
 ## Arguments
 By definition, an argument is a conjecture that states "if you make certain assumptions, then a particular statement must logically follow." - Fawzi 
 - The assumptions are called **premises**.
 - The particular statement that must follow is the **conclusion**.
 
 ### Validity
-We can check whether or not the given argument is valid using either a truth table, or with the [[public/Discrete-Math/Resources/Law-of-Equivalance.png|Law of Equivalence]] chart and the [[public/Discrete-Math/Resources/Rules-of-Inference.png|Rules of Inferences]] chart.
+We can check whether or not the given argument is valid using either a truth table, or with the [Law of Equivalence](../assests/Law%20of%20Equivalance.png) chart and the [Rules of Inferences](../assests/Rules%20of%20Inference.png) chart.
 
-- In order for an argument to be valid, every interpretation in which all the premises are true, the conclusion must also be true. 
-	- For the sake of less typing I will denote premise 1 as P1, premise 2 as P2 and so on 
-		- So if an argument is valid then it means that: $(P1 \wedge P2 \wedge P3 \wedge ...) \rightarrow Conclusion$
+In order for an argument to be valid, every interpretation in which all the premises are true, the conclusion must also be true. 
+- For the sake of less typing I will denote premise 1 as P1, premise 2 as P2 and so on 
+  - So if an argument is valid then it means that: $(P1 \wedge P2 \wedge P3 \wedge ...) \rightarrow Conclusion$
 
 |            | Example 1: Suppose we have the argument |     |
 | ---------- | --------------------------------------- | --- |
-| P1         | $$p \vee q$$                            |     |
-| P2         | $$q \to r$$                             |     |
-| P3         | $$ \sim p$$                             |     |
-| Conclusion | $$r$$                                   |     |
+| P1         | $p \vee q$                              |     |
+| P2         | $q \to r$                               |     |
+| P3         | $\sim p$                                |     |
+| Conclusion | $r$                                     |     |
 Is the argument valid? Lets find out using a truth table
 
-| $$p$$ | $$q$$ | (conclusion)<br> $$r$$ | (P3) <br> $$\sim p$$ | (P1)<br> $$p \vee q$$ | (P2)<br> $$q \to r$$ |
-| :---: | :---: | :--------------------: | :------------------: | :-------------------: | -------------------- |
-|   1   |   1   |           1            |          0           |           1           | 1                    |
-|   1   |   1   |           0            |          0           |           1           | 0                    |
-|   1   |   0   |           1            |          0           |           1           | 1                    |
-|   1   |   0   |           0            |          0           |           1           | 1                    |
-|   0   |   1   |         ==1==          |        ==1==         |         ==1==         | ==1==                |
-|   0   |   1   |           0            |          1           |           1           | 0                    |
-|   0   |   0   |           1            |          1           |           0           | 1                    |
-|   0   |   0   |           0            |          1           |           0           | 1                    |
->I have highlighted all the rows where the premises are all true, which there is only one row but the point is as long as the conclusion is true for all the rows where all the premises are true then the argument is valid. 
+|  $p$  |  $q$  | (conclusion) </br> $r$ | (P3) </br> $\sim p$ | (P1)</br> $p \vee q$ | (P2)</br> $q \to r$ |
+| :---: | :---: | :--------------------: | :-----------------: | :------------------: | :-----------------: |
+|   1   |   1   |           1            |          0          |          1           |          1          |
+|   1   |   1   |           0            |          0          |          1           |          0          |
+|   1   |   0   |           1            |          0          |          1           |          1          |
+|   1   |   0   |           0            |          0          |          1           |          1          |
+|   0   |   1   |         ==1==          |        ==1==        |        ==1==         |        ==1==        |
+|   0   |   1   |           0            |          1          |          1           |          0          |
+|   0   |   0   |           1            |          1          |          0           |          1          |
+|   0   |   0   |           0            |          1          |          0           |          1          |
+
+> I have highlighted (with the ==) all the rows where the premises are all true, which there is only one row but the point is as long as the conclusion is true for all the rows where all the premises are true then the argument is valid. 
 
 Lets consider another example: 
 
-|            | Example 2    |
-| ---------- | ------------ |
-| P1         | $p \to r$    |
-| P2         | $q \to r$    |
-| P3         | $r$          |
-| Conclusion | $$p \vee q$$ |
+| Example 2  |            |
+| ---------- | ---------- |
+| P1         | $p \to r$  |
+| P2         | $q \to r$  |
+| P3         | $r$        |
+| Conclusion | $p \vee q$ |
 With a truth table
 
-| $p$ | $q$ | (P3)<br>$r$ | (P1)<br>$p \to r$ | (P2)<br>$q \to r$ | (conclusion)<br> $p \vee q$ |
-| :-: | :-: | :---------: | :---------------: | :---------------: | :-------------------------: |
-|  1  |  1  |    ==1==    |       ==1==       |       ==1==       |            ==1==            |
-|  1  |  1  |      0      |         0         |         0         |              1              |
-|  1  |  0  |    ==1==    |       ==1==       |       ==1==       |            ==1==            |
-|  1  |  0  |      0      |         0         |         1         |              1              |
-|  0  |  1  |    ==1==    |       ==1==       |       ==1==       |            ==1==            |
-|  0  |  1  |      0      |         1         |         0         |              1              |
-|  0  |  0  |    ==1==    |       ==1==       |       ==1==       |            ==0==            |
-|  0  |  0  |      0      |         1         |         1         |              0              |
+|  $p$  |  $q$  | (P3)<br>$r$ | (P1)<br>$p \to r$ | (P2)<br>$q \to r$ | (conclusion)<br> $p \vee q$ |
+| :---: | :---: | :---------: | :---------------: | :---------------: | :-------------------------: |
+|   1   |   1   |    ==1==    |       ==1==       |       ==1==       |            ==1==            |
+|   1   |   1   |      0      |         0         |         0         |              1              |
+|   1   |   0   |    ==1==    |       ==1==       |       ==1==       |            ==1==            |
+|   1   |   0   |      0      |         0         |         1         |              1              |
+|   0   |   1   |    ==1==    |       ==1==       |       ==1==       |            ==1==            |
+|   0   |   1   |      0      |         1         |         0         |              1              |
+|   0   |   0   |    ==1==    |       ==1==       |       ==1==       |            ==0==            |
+|   0   |   0   |      0      |         1         |         1         |              0              |
 > Now the example above is not a valid argument because on the second to last row, all the premises are true but the conclusion is false. 
 
 Instead of drawing a truth table out each time we do a formal proof using Laws of Equivalence and Rules of Inferences. Here is the chart for Rules of Inferences: 
-![[public/Discrete-Math/Resources/Rules-of-Inference.png]]
+![public/Discrete-Math/Resources/Rules-of-Inference.png](../assests/Rules%20of%20Inference.png)
 
 
 Suppose we used example 1 above: 
 
-| Line Number |   proof    | Rules or Laws used | Line used |
+| Line Number |   Proof    | Rules or Laws used | Line used |
 | :---------: | :--------: | :----------------: | :-------: |
 |     P1      | $p \vee q$ |       Given        |           |
 |     P2      | $q \to r$  |       Given        |           |

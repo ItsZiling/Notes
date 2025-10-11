@@ -28,7 +28,7 @@ It is similar to an introductory math proof course but is specifically tailored 
 
 ## Course Content: Notes
 
-- [[1. Propositional Logic]]
+- [Propositional Logic](./content/Propositional-logic.md)
 - [[2. Digital Circuit]]
 - [[3. First-Order Predicate Logic]]
 - [[4. Methods of Proof]]
