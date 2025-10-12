@@ -1,4 +1,4 @@
-# Importanr Git Commands 
+# Important Git Commands 
 
 ### Git Pull, Git Fetch and Git Merge
 
