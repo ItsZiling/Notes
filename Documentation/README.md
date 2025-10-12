@@ -1,4 +1,4 @@
-# Git Docs Content
+# Git Docus
 1. [Getting Started (Basics)](./Git/Basics.md)
 2. [Branching](./Git/Branching-Basics.md)
 3. [Git Hosting (remote repository)](./Git/Git-Hosting.md)
