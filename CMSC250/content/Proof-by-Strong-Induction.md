@@ -28,8 +28,8 @@ Given the recurrence definition:
 > 
 > I will apply strong induction on $n$<br> 
 > Base case $n = 0, 1$: 
-> 1. $a_0 = 12 = 5 * 3(^0) + 7 * 2(^0) \checkmark$
-> 2. $a_1 = 29 = 5 * 3(^1) + 7 * 2(^1) \checkmark$
+> 1. $a_0 = 12 = 5 * 3^0 + 7 * 2^0 \checkmark$
+> 2. $a_1 = 29 = 5 * 3^1 + 7 * 2^1 \checkmark$
 >
 >Inductive Hypothesis: For some $k \geq 1$, assume that for all $i \leq k$, $a_i = 5(3^i) + 7(2^i)$<br>
 > Inductive Step: It suffices to show to $a_{k+1} = 5(3^{k+1}) + 7(2^{k+1})$
