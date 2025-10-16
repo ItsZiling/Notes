@@ -18,7 +18,7 @@ At the beginning of the proof state "I will apply strong induction on $n$" or an
 
 # Proof Examples: 
 
-#### 1. Claim: Prove that for all $n \geq 0:$ $𝑎_𝑛 = 5 * 3𝑛 + 7 * 2𝑛$
+#### 1. Claim: Prove that for all $n \geq 0:$ $𝑎_𝑛 = 5 * 3^𝑛 + 7 * 2^𝑛$
 Given the recurrence definition: 
 - $a_0 = 12, a_1 = 29$, and for all $n \geq 2, 𝑎_𝑛 = 5𝑎_{𝑛−1} − 6𝑎_{n−2}$
 
