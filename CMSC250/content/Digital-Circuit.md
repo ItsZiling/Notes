@@ -8,13 +8,13 @@ The three most basic logic gates are:
 - the **and** gate
 - the **not** gate
 
-![Gates.jpg](../assests/Gates.jpg)
+![Gates.jpg](../assets/Gates.jpg)
 
 > If we combine a couple of these together with some inputs and outputs we get a circuit board. 
 
 Consider this simple circuit (Stolen from my professor's slide)
 - It has three input bits and two output bits
-![Simple Circuit.png](../assests/Simple%20Circuit.png)
+![Simple Circuit.png](../assets/Simple%20Circuit.png)
 
 What is the output given the input 011(Top to bottom)?
 
@@ -32,7 +32,7 @@ Consider the statement $p \wedge \neg (q \vee r) \equiv p \wedge (\neg q \wedge 
 
 It will look something like this
 
-![Example_1.png](../assests/Example_1.png)
+![Example_1.png](../assets/Example_1.png)
 
 > Alternatively, you can combine the $q$ and the $r$ to an "or" gate and then negate the output of the "or" gate with a "not" gate.  FYI I drew the picture above.
 > (Insert a slow clap from the editor here) 
@@ -116,18 +116,18 @@ But in base 2 or binary we carry the one over when the sum is 2. So $1 + 1 = 10$
 ## Half-Adder, Full-Adder and Parallel-Adder
 
 A half-adder is a circuit used to add two bits together. But here it is: (Note: All pictures are taken from my professor slide) 
-![Half-Adder.png](../assests/Half-Adder.png)
+![Half-Adder.png](../assets/Half-Adder.png)
 
 A full-adder uses two half-adders to add three bits together. 
 
-![full-adder.png](../assests/full-adder.png)
+![full-adder.png](../assets/full-adder.png)
 
 A parallel-adder is when you are doing operands with $k$-bits, where $k$ is the number of bits. It uses a combination of half-adder and full-adder. 
 
 When adding 2 $k$-bit number together, the number of inputs is always $2k$ and the number of outputs is always $k+1$. 
 - For example, consider a 3 bit operands. The number of inputs is 6 and the number of outputs is 4. Here is a picture from my professor slide.
 
-![parallel-adder.png](../assests/parallel-adder.png)
+![parallel-adder.png](../assets/parallel-adder.png)
 
 > [!tip]
 > - The amount of half-adder for any $k$-bit operands is always 1

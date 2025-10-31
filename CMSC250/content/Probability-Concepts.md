@@ -104,7 +104,7 @@ Stephen King has written 57 books that can be classified as horror. 40 of the bo
 1. How many books are either horror or were written before 2000? 
 
 Venn Diagram:
-![venn_example.png](../assests/venn_example.png)
+![venn_example.png](../assets/venn_example.png)
 
 Breakdown: 
 1. 57 books written are horror but 35 of those were written before 2000 so $57-35 = 22$ for the amount of horror books written but are not written before 2000.

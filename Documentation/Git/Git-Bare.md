@@ -1,7 +1,6 @@
-This is my dotfiles for linux operating system</br> 
-To make your own follow the steps below. I will be using `.cfg` as the directory name.
+# Configuring a bare git repository
 
-# Configuring a bare git repo
+I will be using `.cfg` as the directory name.
 
 ```bash
 mkdir .cfg

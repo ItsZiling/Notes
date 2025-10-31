@@ -58,7 +58,7 @@ Another notation for relation is $a\mathrel B b$ which reads "$a$ relates to $b$
 - $(a, b) \in B \leftrightarrow P(a, b) \leftrightarrow a \mathrel B b$
 
 Non-intuitive examples of binary relation: 
-![example](../assests/relation-examples.png)
+![example](../assets/relation-examples.png)
 
  
 

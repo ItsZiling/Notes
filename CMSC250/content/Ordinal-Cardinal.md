@@ -211,7 +211,7 @@ Suppose I have a hotel with infinite number of rooms, numbered starting at 0 the
 	- Now, move along the diagonal of the matrix and assign a room to each guest. So, the guest in row 0 column 0 (bus 0 seat number 0) will move to room 0, the guest in row 0 column 1 (bus 0 seat number 1) will move to room 1, the guest in row 1 column 0 (bus 1 seat number 0) will move to room 2, etc...
 		- Basically a path that goes from row 0 column 0 to row 0 column 1 to row 1 column 0 to row 2 column 0 to row 1 column 1 to row 0  column 2 to etc...
 		- Drawing the matrix and the path looks something like this. If each of those star represents a guest. 
-![Hotel.png](../assests/Hotel.png)
+![Hotel.png](../assets/Hotel.png)
 	- But what if my hotel is full? How would I do fit all the guest into my hotel? 
 		- This would have something to do with infinite prime numbers which is hard to explain so I just linked a video explaining this one. [Infinite Hotel Paradox](https://www.youtube.com/watch?v=Uj3_KqkI9Zo)
 

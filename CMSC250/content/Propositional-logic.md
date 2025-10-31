@@ -89,7 +89,7 @@ We will translate the given statements into "logic":
 	- $p \vee q$
 - Neither Jim nor Timmy are sleeping 
   - Let p = `Jim is sleeping` and q = `Timmy is sleeping`
-    - Note: Either of the two notations work here, they are equivalent. See [Law of Equivalance](../assests/Law%20of%20Equivalance.png)
+    - Note: Either of the two notations work here, they are equivalent. See [Law of Equivalance](../assets/Law%20of%20Equivalance.png)
 	- $\sim p \wedge \sim q$ or
 	- $\sim (p \vee q)$
 - Neither Jim nor Timmy are angry but Tommy is. 
@@ -146,7 +146,7 @@ A statement is called a contradiction if they are `false` under every possible i
 
 ## Laws of Equivalence
 We can use the laws of equivalence to simplify statements
-![Law of Equivalance.png](../assests/Law%20of%20Equivalance.png)
+![Law of Equivalance.png](../assets/Law%20of%20Equivalance.png)
 
 > [!IMPORTANT]
 > Given the statement: $\sim (\sim p \wedge q) \wedge (p \vee \sim q)$.
@@ -261,7 +261,7 @@ By definition, an argument is a conjecture that states "if you make certain assu
 - The particular statement that must follow is the **conclusion**.
 
 ### Validity
-We can check whether or not the given argument is valid using either a truth table, or with the [Law of Equivalence](../assests/Law%20of%20Equivalance.png) chart and the [Rules of Inferences](../assests/Rules%20of%20Inference.png) chart.
+We can check whether or not the given argument is valid using either a truth table, or with the [Law of Equivalence](../assets/Law%20of%20Equivalance.png) chart and the [Rules of Inferences](../assets/Rules%20of%20Inference.png) chart.
 
 In order for an argument to be valid, every interpretation in which all the premises are true, the conclusion must also be true. 
 - For the sake of less typing I will denote premise 1 as P1, premise 2 as P2 and so on 
@@ -311,7 +311,7 @@ With a truth table
 > Now the example above is not a valid argument because on the second to last row, all the premises are true but the conclusion is false. 
 
 Instead of drawing a truth table out each time we do a formal proof using Laws of Equivalence and Rules of Inferences. Here is the chart for Rules of Inferences: 
-![public/Discrete-Math/Resources/Rules-of-Inference.png](../assests/Rules%20of%20Inference.png)
+![public/Discrete-Math/Resources/Rules-of-Inference.png](../assets/Rules%20of%20Inference.png)
 
 
 Suppose we used example 1 above: 

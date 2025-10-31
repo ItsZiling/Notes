@@ -9,7 +9,7 @@ More formally, a function is assigning members of a set (domain) to the members 
 
 To defined a function the notation is used as follow $f : X \to Y$. This reads a "f is a function whose domain is the set X and codomain is the Y where members of the X is mapped to members of Y".
 
-![Function.png](../assests/Function.png)
+![Function.png](../assets/Function.png)
 
 1. The domain of the function above is {2, 3, 4, 7}
 2. The codomain of the function above is {5, 9, 10}
@@ -66,7 +66,7 @@ A function is bijective if it is both injective and surjective.
 Suppose $y$ is some element of the codomain.
 - The inverse image of $y$ is a subset of the domain that maps to $y$
 
-![Function.png](../assests/Function.png)
+![Function.png](../assets/Function.png)
 
 Given the function above again:
 1. The inverse image of 5 is {2, 4}

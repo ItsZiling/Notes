@@ -57,7 +57,7 @@ Method 3: Using set rules.
 
 The set rules are: 
 
-![setRules.png](../assests/setRules.png)
+![setRules.png](../assets/setRules.png)
 
 
 >[!important]

@@ -6,7 +6,7 @@ Suppose $f : X \to Y$ and $g : Y \to Z$ then $g \circ f$ will be denoted as:
 - $(g \circ f) : X \to Z$ where $(\forall x \in X)[(g \circ f)(x) = g(f(x))]$
 
 
-![composition.png](../assests/composition.png)
+![composition.png](../assets/composition.png)
 
 1. The domain of $g \circ f$ is $X$
 2. The codomain of $g \circ f$ is $Z$
@@ -17,7 +17,7 @@ Suppose $f : X \to Y$ and $g : Y \to Z$ then $g \circ f$ will be denoted as:
 Using the same diagram as above, the range:
 
 
-![ComRange.png](../assests/ComRange.png)
+![ComRange.png](../assets/ComRange.png)
 
 
 > [!important]

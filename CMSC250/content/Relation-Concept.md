@@ -99,7 +99,7 @@ A binary relation is a partial order if and only if it is:
 
 
 Common examples are:
-![example](../assests/Relation-concepts-example.png)
+![example](../assets/Relation-concepts-example.png)
 
 
 

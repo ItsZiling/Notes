@@ -17,7 +17,7 @@ Irrational Number:
 
 > At the time of writing this, Github markdown doesn't have the font to render domain symbols correcty. So, here is an image of they look like.
 
-![Domains](../assests/Domains.png)
+![Domains](../assets/Domains.png)
 
 We can also restrict the domain:
 - $\Bbb {R}^{+}$ - all positive real numbers
