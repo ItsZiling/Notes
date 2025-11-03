@@ -5,4 +5,4 @@
    1. [Important Commands](./Git/Important-Git-Commands.md)
    2. [Collaboration Basics](./Git/Collaboration.md)
 4. [Advanced Topics](./Git/Advanced-Git-Features.md)
-5. [Configuring a Bare Git Repository](./Git/Git-Bare.md)
+5. [Configuring a Bare Git Repository For Linux Dotfiles](./Git/Git-Bare.md)
